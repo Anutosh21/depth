@@ -93,5 +93,10 @@
   "camera_files": {
     "live_depth.py": "23a1a21d9cec6bfaac77e9c8f5627c1ed0e982a965b7c00a93839af60efb42ed",
     "live_depth.html": "8e320b1cede6b635e2956b6c7e1bf1d7fce13b2bfb200c71c460e022317c17c9"
+  },
+  "runtime_download": {
+    "url": "https://raw.githubusercontent.com/anutosh491/depth-wasm64/0ce401aea37f8dc004976b14cd7e6d27ac1d7e82/depth_anything_v2_vits.pth",
+    "sha256": "715fade13be8f229f8a70cc02066f656f2423a59effd0579197bbf57860e1378",
+    "cache": "Browser Cache Storage; SHA-256 verified on every load."
   }
 }
