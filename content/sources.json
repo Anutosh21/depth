@@ -1,0 +1,97 @@
+{
+  "repository": "DepthAnything/Depth-Anything-V2",
+  "revision": "a561b849ebae10a6f5ef49e26c83cbbcd36c71bf",
+  "files": [
+    {
+      "path": "LICENSE-Depth-Anything-V2",
+      "upstream_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "local_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "changed": false
+    },
+    {
+      "path": "depth_anything_v2/dinov2.py",
+      "upstream_sha256": "d22df8d0da44c8525ebed898fd9c33b3acfcda919a84d577cc2a08bfd3d50ac1",
+      "local_sha256": "2752a05b690a2a66a29cefcce639d3f2dec9a6ebf2752c2444d5a13cee1acd54",
+      "changed": true
+    },
+    {
+      "path": "depth_anything_v2/dinov2_layers/__init__.py",
+      "upstream_sha256": "e3c28c7b775165b6844000eb69f44d104d6c3803ac7da5d59f6ac3ecfb46d9d8",
+      "local_sha256": "e3c28c7b775165b6844000eb69f44d104d6c3803ac7da5d59f6ac3ecfb46d9d8",
+      "changed": false
+    },
+    {
+      "path": "depth_anything_v2/dinov2_layers/attention.py",
+      "upstream_sha256": "0d2410ce8b8b4499a6b0cdab939ae2bceab8971efd8660d999b0f3088f28cbf7",
+      "local_sha256": "4cd09fb41a118baa032807aa78d303ce6b628dfec5dc055924d88d80790e314d",
+      "changed": true
+    },
+    {
+      "path": "depth_anything_v2/dinov2_layers/block.py",
+      "upstream_sha256": "093266ea08084c7cce7b8ddd779ecfaaa13055735faa8a7d68b5924f385b395b",
+      "local_sha256": "093266ea08084c7cce7b8ddd779ecfaaa13055735faa8a7d68b5924f385b395b",
+      "changed": false
+    },
+    {
+      "path": "depth_anything_v2/dinov2_layers/drop_path.py",
+      "upstream_sha256": "949100aac4d9c19c9d65319dbd362886c5d46a72d7586ba4fd500e9f1d51570c",
+      "local_sha256": "949100aac4d9c19c9d65319dbd362886c5d46a72d7586ba4fd500e9f1d51570c",
+      "changed": false
+    },
+    {
+      "path": "depth_anything_v2/dinov2_layers/layer_scale.py",
+      "upstream_sha256": "356817b5d1390737128cbcc03a5333fd3060b73beae478772282ccb851d0ef85",
+      "local_sha256": "356817b5d1390737128cbcc03a5333fd3060b73beae478772282ccb851d0ef85",
+      "changed": false
+    },
+    {
+      "path": "depth_anything_v2/dinov2_layers/mlp.py",
+      "upstream_sha256": "c18c5b3f021408597a473bb710070ec3fb3b39f5a2e42e88ae83ced425a608b5",
+      "local_sha256": "c18c5b3f021408597a473bb710070ec3fb3b39f5a2e42e88ae83ced425a608b5",
+      "changed": false
+    },
+    {
+      "path": "depth_anything_v2/dinov2_layers/patch_embed.py",
+      "upstream_sha256": "b3f82e19926c9cfb63f10136aca5e8a723bde1ad62dae1d04f90d405f9439baf",
+      "local_sha256": "b3f82e19926c9cfb63f10136aca5e8a723bde1ad62dae1d04f90d405f9439baf",
+      "changed": false
+    },
+    {
+      "path": "depth_anything_v2/dinov2_layers/swiglu_ffn.py",
+      "upstream_sha256": "df81d9901240214edc1831ce1b77558dcd6227b29a2f000fc5f546df55d2d09a",
+      "local_sha256": "df81d9901240214edc1831ce1b77558dcd6227b29a2f000fc5f546df55d2d09a",
+      "changed": false
+    },
+    {
+      "path": "depth_anything_v2/dpt.py",
+      "upstream_sha256": "7cc9a29b41d31e1628e5c8b8705e25ae95bc6490f779dbb695297ce2341566f5",
+      "local_sha256": "650035c36e47d33657c9d3f1266e3aeeb42ec55bc323aa77a110e4e1af863673",
+      "changed": true
+    },
+    {
+      "path": "depth_anything_v2/util/blocks.py",
+      "upstream_sha256": "351aa24b8af4bef923ebe3bed5e5e8503b08e39bf06ee045d6444a485a2036a8",
+      "local_sha256": "192045851aab2320391afbc604cddb03faf04c15f6905dd1d772735d4acad2f5",
+      "changed": true
+    },
+    {
+      "path": "depth_anything_v2/util/transform.py",
+      "upstream_sha256": "a97df1dbb687457a40c387fdc3482edee7ddc5c142c7d2735ca6235a8ae2885f",
+      "local_sha256": "338982c3c3ad0de30220470c8f6a16662cee1e8f09064f33370ea929f3895e1a",
+      "changed": true
+    }
+  ],
+  "adaptation": "Optional cv2/torchvision image-helper imports deferred into image2tensor; neural-network forward unchanged. Trailing whitespace and redundant final blank lines normalized.",
+  "checkpoint": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small/resolve/03876f8651c73a60fe4c2c48294e09fcb6838fcf/depth_anything_v2_vits.pth",
+  "checkpoint_sha256": "715fade13be8f229f8a70cc02066f656f2423a59effd0579197bbf57860e1378",
+  "playground": "https://executorch.ai/playground/webgpu/#/demo/depth",
+  "preprocessing": "224x224 RGB, ImageNet normalization; Pillow bilinear resize in the notebook, browser canvas resize in the playground.",
+  "photo": "https://commons.wikimedia.org/wiki/File:YellowLabradorLooking_new.jpg",
+  "photo_credit": "Elf; derivatives by Djmirko and FT2, CC BY-SA 3.0",
+  "colormap": "Turbo polynomial coefficients as used by pytorch/executorch website/playground/webgpu/src/vision/colormap.js",
+  "camera": "Browser getUserMedia; OpenCV JPEG decode, RGB/ImageNet normalization and colour-map resize; one completed model call per frame.",
+  "camera_files": {
+    "live_depth.py": "23a1a21d9cec6bfaac77e9c8f5627c1ed0e982a965b7c00a93839af60efb42ed",
+    "live_depth.html": "8e320b1cede6b635e2956b6c7e1bf1d7fce13b2bfb200c71c460e022317c17c9"
+  }
+}
