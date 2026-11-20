@@ -28,3 +28,6 @@ Licensing and source details are in `content/LICENSE-Depth-Anything-V2` and
 `content/sources.json`.
 
 To deploy, set **Settings → Pages → Source → GitHub Actions**, then push to `main`.
+
+The browser bundle omits development headers, static libraries and package tests.
+Both notebooks use Turbine/IREE for compilation and execution on their selected device.
